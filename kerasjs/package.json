@@ -1,0 +1,13 @@
+{
+  "name": "kerasjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "keras-js": "^1.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.0"
+  }
+}
