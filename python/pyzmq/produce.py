@@ -1,6 +1,6 @@
 import time
 import zmq
-import pyzmq.util
+import util
 
 
 def producer(url):
@@ -19,4 +19,4 @@ def producer(url):
     pass
 
 
-producer(pyzmq.util.URL)
+producer(util.URL)
