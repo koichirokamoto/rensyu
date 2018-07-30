@@ -5,8 +5,6 @@ from absl import flags
 import sample
 import util
 
-p = sample.Producer(util.URL)
-
 
 def define_flags():
   """Add flags for running sample producer."""
@@ -14,6 +12,8 @@ def define_flags():
 
 
 def main(_):
+  p = sample.Producer(util.URL)
+
   num = 0
   try:
     while True:

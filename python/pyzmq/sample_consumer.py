@@ -5,8 +5,6 @@ from absl import flags
 import sample
 import util
 
-c = sample.Consumer(util.URL)
-
 
 def define_flags():
   """Add flags for running sample consumer."""
@@ -17,6 +15,7 @@ def define_flags():
 
 
 def main(_):
+  c = sample.Consumer(util.URL)
   consumer_id = random.randrange(1, 10005)
   print('I am consumer #%s' % (consumer_id))
 
