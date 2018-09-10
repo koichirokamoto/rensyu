@@ -1,0 +1,18 @@
+{
+  "python.pythonPath": "${env.CONDA_PREFIX}/bin/python",
+  "python.formatting.yapfPath": "${env.CONDA_PREFIX}/bin/yapf",
+  "python.autoComplete.preloadModules": [
+    "numpy",
+    "tensorflow",
+    "tensorflow_hub",
+    "tensorflow_serving"
+  ],
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: google, indent_width: 2}"
+  ],
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintPath": "${env.CONDA_PREFIX}/bin/pylint",
+  "python.linting.pylintArgs": ["--rcfile=pylintrc"]
+}
